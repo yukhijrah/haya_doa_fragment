@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.hayarasikhah.doa_fragment;">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtSalam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assalamualaikum"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/txtNAma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hai, Haya Rasikhah"
+            android:layout_below="@+id/txtSalam"
+            android:layout_marginStart="30dp"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/txtJadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNAma"
+            android:text="Jadwal Sholat Hari ini"
+            android:layout_marginStart="30dp"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvJadwal"
+        android:padding="10dp"
+        android:layout_marginBottom="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
